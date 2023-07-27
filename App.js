@@ -32,7 +32,7 @@ const LoginScreen = () => {
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.registerButton}>
-        <Text style={styles.registerButtonText}>¿Olvido su Contraseña?</Text>
+        <Text style={styles.registerButtonText}>¿Olvido su Contraseña? ahsds</Text>
       </TouchableOpacity>
     </ScrollView>
   );
