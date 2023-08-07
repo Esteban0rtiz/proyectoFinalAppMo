@@ -1,0 +1,149 @@
+{
+    "productos": [
+      {
+        "nombre": "pantalones",
+        "marca": "NIKE",
+        "descripcion": "Pantalon deportivo",
+        "precio": 45
+      },
+      {
+      "nombre": "camiseta",
+      "marca": "Adidas",
+      "descripcion": "Camiseta de algodón",
+      "precio": 25
+    },
+    {
+      "nombre": "chaqueta",
+      "marca": "Puma",
+      "descripcion": "Chaqueta deportiva",
+      "precio": 60
+    },
+    {
+      "nombre": "vestido",
+      "marca": "Zara",
+      "descripcion": "Vestido casual",
+      "precio": 35
+    },
+    {
+      "nombre": "blusa",
+      "marca": "H&M",
+      "descripcion": "Blusa estampada",
+      "precio": 20
+    },
+    {
+      "nombre": "sudadera",
+      "marca": "Under Armour",
+      "descripcion": "Sudadera con capucha",
+      "precio": 50
+    },
+    {
+      "nombre": "jeans",
+      "marca": "Levi's",
+      "descripcion": "Jeans ajustados",
+      "precio": 55
+    },
+    {
+      "nombre": "falda",
+      "marca": "Forever 21",
+      "descripcion": "Falda plisada",
+      "precio": 30
+    },
+    {
+      "nombre": "calcetines",
+      "marca": "Nike",
+      "descripcion": "Calcetines deportivos",
+      "precio": 10
+    },
+    {
+      "nombre": "zapatos",
+      "marca": "Vans",
+      "descripcion": "Zapatos de lona",
+      "precio": 70
+    },
+    {
+      "nombre": "chaqueta",
+      "marca": "Puma",
+      "descripcion": "Chaqueta deportiva",
+      "precio": 60
+    },
+    {
+      "nombre": "vestido",
+      "marca": "Zara",
+      "descripcion": "Vestido casual",
+      "precio": 35
+    },
+    {
+      "nombre": "blusa",
+      "marca": "H&M",
+      "descripcion": "Blusa estampada",
+      "precio": 20
+    },
+    {
+      "nombre": "sudadera",
+      "marca": "Under Armour",
+      "descripcion": "Sudadera con capucha",
+      "precio": 50
+    },
+    {
+      "nombre": "jeans",
+      "marca": "Levi's",
+      "descripcion": "Jeans ajustados",
+      "precio": 55
+    },
+    {
+      "nombre": "falda",
+      "marca": "Forever 21",
+      "descripcion": "Falda plisada",
+      "precio": 30
+    },
+    {
+      "nombre": "calcetines",
+      "marca": "Nike",
+      "descripcion": "Calcetines deportivos",
+      "precio": 10
+    },
+    {
+      "nombre": "zapatos",
+      "marca": "Vans",
+      "descripcion": "Zapatos de lona",
+      "precio": 70
+    },
+    {
+      "nombre": "sombrero",
+      "marca": "Goorin Bros",
+      "descripcion": "Sombrero de ala ancha",
+      "precio": 40
+    },
+    {
+      "nombre": "chaqueta de cuero",
+      "marca": "Harley-Davidson",
+      "descripcion": "Chaqueta de cuero vintage",
+      "precio": 180
+    },
+    {
+      "nombre": "suéter",
+      "marca": "Ralph Lauren",
+      "descripcion": "Suéter de cachemira",
+      "precio": 120
+    },
+    {
+      "nombre": "vestido de noche",
+      "marca": "Dolce & Gabbana",
+      "descripcion": "Vestido de noche elegante",
+      "precio": 300
+    },
+    {
+      "nombre": "gorra",
+      "marca": "New Era",
+      "descripcion": "Gorra de béisbol",
+      "precio": 25
+    },
+    {
+      "nombre": "bufanda",
+      "marca": "Burberry",
+      "descripcion": "Bufanda de lana a cuadros",
+      "precio": 90
+    }
+    ]
+  }
+  
