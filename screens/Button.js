@@ -6,6 +6,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import Login from './screens/Login';
 import Registro from './screens/Registro';
 import Home from './screens/home';
+import Productos from './Productos';
+import Products from './Products';
 const Tab = createBottomTabNavigator();
 
 const Screen1 = () => (
@@ -34,6 +36,12 @@ const Screen4 = () => (
     <Home></Home>
   </View>
 );
+const Screen5 = () => (
+  <View style={styles.container}>
+    <Text style={styles.title}>Productos2</Text>
+    <Home></Home>
+  </View>
+);
 const Button = () => {
   return (
     <NavigationContainer>
@@ -50,7 +58,11 @@ const Button = () => {
               iconName = 'ios-person';
             }else if (route.name === 'transacciones') {
               iconName = 'ios-person';
+            }else if (route.name === 'productos2') {
+              iconName = 'ios-person';
             }
+
+            
 
             return <Icon name={iconName} size={size} color={color} />;
           },
@@ -63,6 +75,7 @@ const Button = () => {
         <Tab.Screen name="Login" component={Screen1} />
         <Tab.Screen name="Registro" component={Screen2} />
         <Tab.Screen name="Productos" component={Screen3} />
+        <Tab.Screen name="Productos" component={Screen5} />
         <Tab.Screen name="Home" component={Screen4} />
       </Tab.Navigator>
     </NavigationContainer>
