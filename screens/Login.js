@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, StatusBar, } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons'; //iconos
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+/*import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';*/
 
 
 
@@ -12,7 +12,11 @@ const LoginScreen = () => {
   
   
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <View style={styles.View}>
+      <StatusBar
+        backgroundColor="#61dafb"
+      />
+          <ScrollView>
       <View style={styles.iconContainer}>
         <Icon name="shirt-sharp" size={150} color="#691010"  /> 
       </View> 
@@ -40,10 +44,11 @@ const LoginScreen = () => {
         <Text style={styles.registerButtonText}>¿Olvido su Contraseña?</Text>
       </TouchableOpacity>
     </ScrollView>
+    </View>
   );
 };
 
-const Tab = createBottomTabNavigator();
+/*const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
@@ -52,16 +57,15 @@ function MyTabs() {
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
-};
+};*/
 
 const styles = StyleSheet.create({
-  container: {
+  View: {
     flexGrow: 1,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#000000', 
     padding: 20,
-    
   },
 
   iconContainer: {

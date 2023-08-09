@@ -1,6 +1,6 @@
+import React, { useState } from 'react';
 import { StyleSheet, View, Text, FlatList } from 'react-native'
-import React from 'react'
-import ProductosJSON from "../assets/productos.json"
+import ProductosJSON from "../data/Productos 2.json"
 import Tarjeta from '../components/Tarjeta'
 
 export default function Productos() {
@@ -11,9 +11,10 @@ export default function Productos() {
                 <FlatList 
                     data={ProductosJSON.productos}
                     renderItem={({ item }) => (
-                        <Tarjeta datos={item} />
+                        <Tarjeta datos={item}/>
+                        
                     )}
-
+                    
                     numColumns={2}
 
                 />

@@ -72,7 +72,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     marginBottom: 20,
-    color: '#691010'
+    color: '#fff',
+    fontWeight: 'bold',
+    marginBottom: 20,
   },
   inputContainer: {
     flexDirection: 'row',
@@ -84,13 +86,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     marginBottom: 10,
+    backgroundColor:'#fff'
   },
   icon: {
     marginRight: 10,
   },
   input: {
     flex: 1,
-    color: '#fff'
+    color: '#fff',
 
   },
   button: {
