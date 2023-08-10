@@ -4,7 +4,7 @@ import React from 'react'
 export default function Home() {
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Tienda de Ropa</Text>
+            <Text style={styles.titulo}>Russete</Text>
             <Text style={styles.descripcion}>Nuestro negocio tiene como objetivo vender ropa de todo tipo y que sea llamativa para la gente y que nuestros clientes tambien se sientan muy satisfechos con el servicio que le damos</Text>
             <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.3)" />
             <View style={styles.contenedorimagenes}>
