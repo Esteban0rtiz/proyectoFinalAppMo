@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, FlatList } from 'react-native'
+import { StyleSheet, View, Text, FlatList, TouchableOpacity } from 'react-native'
 import ProductosJSON from "../data/Productos 2.json"
 import Tarjeta from '../components/Tarjeta'
 
 export default function Productos() {
+
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>Listado de productos</Text>
             <View style={{ witdh: "100%" }}>
-                <FlatList 
+                <FlatList
                     data={ProductosJSON.productos}
                     renderItem={({ item }) => (
-                        <Tarjeta datos={item}/>
-                        
+                        <Tarjeta datos={item} />
                     )}
                     
                     numColumns={2}

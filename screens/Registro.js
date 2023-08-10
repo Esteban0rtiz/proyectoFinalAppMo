@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    color: '#fff',
+    color: '#000',
 
   },
   button: {
@@ -115,4 +115,3 @@ const styles = StyleSheet.create({
 });
 
 export default App;
-

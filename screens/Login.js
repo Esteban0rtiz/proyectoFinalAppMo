@@ -1,115 +1,82 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, StatusBar, } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons'; //iconos
-/*import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';*/
+import { View, Text, TextInput, StyleSheet,TouchableOpacity , Alert } from 'react-native'
+import React from 'react';
+import { useState } from 'react';
+
+import userJSON from '../data/Usuarios.json'
+
+export default function Login() {
+    const[usuario, setusuario] = useState("");
+    const[contrasenia, setcontrasenia] = useState(""); 
+    function verificarUsuario(user, pass){
+        for (let item of userJSON.usuarios){
+            if(user == item.mail){
+                if(pass == item.password){
+                    Alert.alert("Mensaje",'acesso correcto')
+                }else{
+                    Alert.alert("Mensaje", 'credenciales incorrectas')
+                }
+            }
+        }
+    }
 
 
-
-
-const LoginScreen = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  
-  
   return (
-    <View style={styles.View}>
-      <StatusBar
-        backgroundColor="#61dafb"
-      />
-          <ScrollView>
-      <View style={styles.iconContainer}>
-        <Icon name="shirt-sharp" size={150} color="#691010"  /> 
-      </View> 
-      <Text style={styles.title}>Bienvenido</Text>
-      <TextInput
+
+    <View style= {styles.container}>
+      <Text style= {styles.title}>LOGIN</Text>
+      <TextInput 
+        placeholder='Ingrese usuario'
         style={styles.input}
-        placeholder="Correo electrónico"
-        value={email}
-        onChangeText={(texto)=>setEmail(texto)}
-        keyboardType="email-address"
-        autoCapitalize="none"
+        onChangeText={ ( texto ) => setusuario( texto ) } 
       />
 
       <TextInput
+        placeholder='Ingrese contraseña'
         style={styles.input}
-        placeholder="Contraseña"
-        value={password}
-        onChangeText={(texto)=>setPassword(texto)}
-        secureTextEntry
+        onChangeText={ ( texto ) => setcontrasenia( texto ) }
       />
-      <TouchableOpacity style={styles.button} onPress={""}>
-        <Text style={styles.buttonText}>Login</Text>
+      <TouchableOpacity style={styles.button} onPress={()=> verificarUsuario( usuario, contrasenia  )}>
+        <Text style={styles.buttonText}>Iniciar Sesion</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.registerButton}>
-        <Text style={styles.registerButtonText}>¿Olvido su Contraseña?</Text>
-      </TouchableOpacity>
-    </ScrollView>
     </View>
-  );
-};
-
-/*const Tab = createBottomTabNavigator();
-
-function MyTabs() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
-    </Tab.Navigator>
-  );
-};*/
+  )
+}
 
 const styles = StyleSheet.create({
-  View: {
-    flexGrow: 1,
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#000000', 
-    padding: 20,
-  },
-
-  iconContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: 20,
-  },
-  title: {
-    color: '#ffffff',
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    
   },
   input: {
-    width: '80%',
-    padding: 10,
-    marginBottom: 10,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    backgroundColor: '#fff',
+      flexDirection: 'row',
+      alignItems: 'center',
+      width: '80%',
+      height: 40,
+      borderColor: '#ccc',
+      borderWidth: 1,
+      borderRadius: 5,
+      padding: 10,
+      marginBottom: 10,
+      backgroundColor:'#fff'
   },
-  button: {
-    backgroundColor: '#691010',
-    padding: 15,
-    borderRadius: 5,
-    marginTop: 20,
-    width: '80%',
+  title:{
+    fontSize: 24,
+    marginBottom: 20,
+    color: '#fff',
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  button:{
+  backgroundColor: '#691010',
+  padding: 10,
+  borderRadius: 5,
+  width: '80%',
   },
   buttonText: {
-    color: '#ffffff',
+    color: '#fff',
     textAlign: 'center',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  registerButton: {
-    marginTop: 10,
-  },
-  registerButtonText: {
-    color: '#ffffff',
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 18,
   },
 });
-
-export default LoginScreen;

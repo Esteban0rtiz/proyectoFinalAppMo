@@ -64,5 +64,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         width:"100%" 
     },
-
+    boton:{
+        backgroundColor: '#691010',
+        padding: 10,
+        borderRadius: 5,
+        width: '80%',
+    },
 });
